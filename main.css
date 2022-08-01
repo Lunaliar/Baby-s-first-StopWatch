@@ -1,0 +1,68 @@
+:root{
+    --btncolor:#fe6d73;
+    --textcolor:#fef9ef;
+    --bgcolor:#17c3b2 ;
+    --wtchcolor:#227c9d;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: var(--bgcolor);
+    color: var(--textcolor);
+}
+h1{
+    text-align: center;
+    margin-top: 2rem;
+}
+.stopwatch{
+    text-align: center;
+    background-color: var(--wtchcolor);
+    width:100%;
+    max-width: 400px;
+    margin: 4rem auto;
+    padding: 1rem 2rem;
+    border-radius: 1.25rem;
+}
+
+.timedisplay{
+    font-size: 3.75rem;
+    margin-bottom: 1rem;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button{
+    appearance: none;
+    background:none;
+    border:none;
+    /* outline: none;
+    user-select:none; */
+    
+    cursor:pointer;
+
+    color: var(--textcolor);
+    font-size: 1.25rem;
+    background-color: var(--btncolor);
+    padding: 0.5rem .75rem;
+    margin: 0 0.5rem;
+    border-radius: 1rem;
+
+    transition: .4s;
+}
+
+button:hover{
+    opacity: .7;
+}
+
+button:active{
+    background-color: var(--wtchcolor);
+}
